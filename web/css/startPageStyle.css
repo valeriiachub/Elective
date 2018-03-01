@@ -1,0 +1,157 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper{
+    background: url('/bg1.jpg') no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+
+}
+
+
+.logo{
+    display: block;
+    float: left;
+    margin-left: 5%;
+    margin-top: 35px;
+
+}
+.logo > a{
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.logo > a:hover{
+    text-decoration: none;
+    color: #2D2C2C;
+    transition: all .2s ease-in-out;
+}
+
+
+.navbar{
+    margin-left: 65%;
+}
+
+.navbar > ul{
+    font-size: 0;
+    margin: 0;
+    list-style: none;
+    height: 75px;
+}
+
+.navbar > ul > li{
+    display: inline-block;
+    text-align: center;
+    height: 75px;
+    line-height: 55px;
+    margin-top: 30px;
+   
+}
+
+
+.navbar > ul > .menu:hover > a > ul{
+    display: block;
+}
+
+.navbar > ul > .menu{
+    transition: all .2s ease-in-out;
+}
+
+.navbar > ul > .menu > a > ul {
+    display: none;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    right: 8%;
+    list-style: none;
+}
+
+
+.navbar > ul > .menu > a > ul > li:hover{
+   background: #fff;
+   color: #2D2C2C; 
+   transition: all .2s ease-in-out;
+}
+.navbar > ul > .menu > a > ul > li{
+    padding: 0 25px;
+}
+
+.navbar > ul > .menu > a > ul > li > a{
+    padding: 0 50px;
+}
+
+
+
+.navbar > ul > li > a{
+   
+    display: inline-block;
+    font-size: 23px;
+    text-decoration: none;
+    color: #fff;
+    height: 75px;
+    padding: 0 25px;
+    
+}
+
+.navbar > ul > li > a:hover::after,
+.navbar > ul > li > a:focus::after
+{
+   width: 100%;
+}
+
+.navbar > ul > li > a::after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    transition: width .3s ease-in-out;
+}
+
+.content{
+    margin-top: 29%;
+}
+
+.content > .registrate{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    border: 2px solid #fff;
+    transition: all .6s ease;
+}
+
+.content > .registrate:hover{
+    background-color: #fff;
+    color: #2D2C2C;
+}
+
+.test{
+   
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    width: 600px;
+    color: #000;
+    font-size: 25px;
+    border: 2px solid #000;
+    text-align:center;
+    height: 120px;
+    padding: 20px;
+}
+
+
+
+
+

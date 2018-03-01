@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>elective</display-name>
+    <welcome-file-list>
+        <welcome-file>start.jsp</welcome-file>
+    </welcome-file-list>
+    <filter>
+        <display-name>EncodingFilter</display-name>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>ua.nure.chub.Elective.server.filter.EncodingFilter</filter-class>
+        <init-param>
+            <description></description>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <security-role>
+        <role-name>admin</role-name>
+    </security-role>
+    <security-role>
+        <role-name>student</role-name>
+    </security-role>
+    <security-role>
+        <role-name>teacher</role-name>
+    </security-role>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Admin pages</web-resource-name>
+            <url-pattern>/addCourse</url-pattern>
+            <url-pattern>/addTeacher</url-pattern>
+            <url-pattern>/block</url-pattern>
+            <url-pattern>/deleteCourse</url-pattern>
+            <url-pattern>/courses</url-pattern>
+            <url-pattern>/students</url-pattern>
+            <url-pattern>/topics</url-pattern>
+            <url-pattern>/setTeacher</url-pattern>
+            <url-pattern>/updateCourse</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Student pages</web-resource-name>
+            <url-pattern>/updateStudent</url-pattern>
+            <url-pattern>/regOnCourse</url-pattern>
+            <url-pattern>/passedCourses</url-pattern>
+            <url-pattern>/futureCourses</url-pattern>
+            <url-pattern>/currentCourses</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>student</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Teacher pages</web-resource-name>
+            <url-pattern>/teacherCourses</url-pattern>
+            <url-pattern>/updateJournal</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>teacher</role-name>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

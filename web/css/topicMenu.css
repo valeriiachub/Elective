@@ -1,0 +1,30 @@
+.topic{
+    display: block;
+    float: left;
+    margin-top: 25px;
+    border: 2px solid #000;
+    height: 250px;
+    width: 25%;
+    margin-left: 6%;
+}
+
+
+.topic > .language{
+    display: block;
+    margin-left: 135px;
+    margin-top: 8%;
+    font-size: 20px;
+}
+
+.topic > .get-courses{
+    color: #000;
+    margin-left: 125px;
+    text-decoration: none;
+    margin-top: 150px;
+    font-size: 20px;
+    display: block;
+}
+
+.topic > .get-courses:hover{
+    color: #7F7C7C;
+}

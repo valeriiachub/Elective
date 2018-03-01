@@ -1,0 +1,157 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+header{
+    background: #524B45;
+    height: 75px;
+    color: #fff;
+}
+
+
+.logo{
+    display: block;
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+
+}
+.logo > a{
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.logo > a:hover{
+    text-decoration: none;
+    color: #908C8C;
+    transition: all .2s ease-in-out;
+}
+
+.right-bar{
+    float: right;
+    margin-right: 8%;
+    height: 45px;
+    display: inline-block;
+    width:25%;
+}
+
+.right-bar > .admin{
+    display: inline-block;
+    margin-right: 35%;
+    font-size: 25px;
+    margin-top: 25px;
+
+}
+
+.right-bar > .logout{
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 45px;
+    border: 1px solid #BEBDBD;
+    text-decoration: none;
+    height: 45px;
+    width: 135px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .2s ease-in-out;
+}
+
+.right-bar > .logout:hover {
+    background: #fff;
+    color: #000;
+    transition: all .2s ease-in-out;
+}
+.navbar{
+    margin-left: 5%;
+    width: 45%;
+    float: left;
+
+
+}
+
+.navbar > ul{
+    font-size: 0;
+    margin: 0;
+    list-style: none;
+    height: 45px;
+}
+
+.navbar > ul > li{
+    display: inline-block;
+    text-align: center;
+    height: 25px;
+    line-height: 35px;
+    margin-top: 20px;
+
+}
+
+
+.navbar > ul > .menu:hover > a > ul{
+    display: block;
+}
+
+.navbar > ul > .menu{
+    transition: all .2s ease-in-out;
+}
+
+.navbar > ul > .menu > a > ul {
+    display: none;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    right: 8%;
+    list-style: none;
+}
+
+
+.navbar > ul > .menu > a > ul > li:hover{
+    background: #fff;
+    color: #2D2C2C;
+    transition: all .2s ease-in-out;
+}
+.navbar > ul > .menu > a > ul > li{
+    padding: 0 25px;
+}
+
+.navbar > ul > .menu > a > ul > li > a{
+    padding: 0 50px;
+}
+
+
+
+.navbar > ul > li > a{
+
+    display: inline-block;
+    font-size: 23px;
+    text-decoration: none;
+    color: #fff;
+    height: 75px;
+    padding: 0 25px;
+
+}
+
+.navbar > ul > li > a:hover::after,
+.navbar > ul > li > a:focus::after
+{
+    width: 100%;
+}
+
+.navbar > ul > li > a::after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #A39F9F;
+    transition: width .3s ease-in-out;
+}
+
+
+
+
+
+

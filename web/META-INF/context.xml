@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource name="jdbc/mysql"
+          auth="Container"
+          description="DB Connection"
+          username="root"
+          password="mysqlpass"
+          type="javax.sql.DataSource"
+          maxTotal="8"
+          maxIdle="30"
+          maxWaitMillis="10000"
+          driverClassName="com.mysql.jdbc.Driver"
+          url="jdbc:mysql://localhost:3306/elective?characterEncoding=UTF-8"/>
+
+    <Realm className="ua.nure.chub.Elective.server.other.MyRealm"
+           dataSourceName="jdbc/mysql" localDataSource="true"
+           userTable="users"
+           userNameCol="login" userCredCol="password"
+           roleQuery="SELECT role_name FROM users, roles WHERE users.login = ? AND users.role_id = roles.role_id" />
+</Context>

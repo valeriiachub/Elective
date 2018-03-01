@@ -1,0 +1,20 @@
+
+<link href="css/navStyle.css" rel="stylesheet" type="text/css">
+<link href="css/inputForm.css" rel="stylesheet" type="text/css">
+<header>
+    <span class="logo"><a href="adminForm.jsp">Profile</a></span>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/addTeacher">Add teacher</a></li>
+            <li><a href="/topics">Courses</a></li>
+            <li><a href="/students">Students</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="right-bar">
+        <span class="admin">Admin</span>
+
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+</header>

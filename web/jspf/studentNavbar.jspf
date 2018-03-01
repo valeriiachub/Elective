@@ -1,0 +1,13 @@
+<link href="css/navStyle.css" rel="stylesheet" type="text/css">
+<header>
+    <span class="logo"><a href="studentForm.jsp">Profile</a></span>
+    <nav class="navbar">
+
+    </nav>
+
+    <div class="right-bar">
+        <span class="admin">Student</span>
+
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+</header>

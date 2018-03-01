@@ -1,0 +1,128 @@
+.form-input {
+    display: block;
+    margin-left: 20%;
+    margin-top: 15px;
+    width: 60%;
+    border: 2px solid #2D2C2C;
+
+}
+
+.form-input > .input-block {
+    margin-left: 10%;
+}
+
+.form-input > .input-block > label {
+    display: inline-block;
+    width: 200px;
+    font-size: 25px;
+}
+
+.input-button {
+    cursor: pointer;
+    display: block;
+    margin-left: 30%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 25%;
+    height: 55px;
+    line-height: 50px;
+    border-radius: 45px;
+    text-decoration: none;
+    background-color: #524B45;
+}
+
+.input-button:hover {
+    background-color: #9C9187;
+    transition: all .3s ease-in;
+
+}
+
+.form-input > ul > li {
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+}
+
+.form-input > .input-block > .input-text {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 45px;
+    width: 320px;
+    height: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.add-button {
+    cursor: pointer;
+    display: block;
+    margin-left: 37%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 25%;
+    height: 55px;
+    line-height: 50px;
+    border-radius: 45px;
+    text-decoration: none;
+    background-color: #524B45;
+}
+
+.form-input > .add-button:hover {
+    background-color: #9C9187;
+    transition: all .3s ease-in;
+}
+.input-block{
+    margin-top: 30px;
+}
+
+.input-block > ul {
+    list-style: none;
+}
+
+.input-block > ul  li{
+
+    display: block;
+    padding: 25px;
+    height: 70px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    border: 2px solid #2D2C2C;
+    line-height: 65px;
+
+}
+
+.input-block ul li .name{
+    margin-left: 0;
+    display: inline-block;
+    font-size: 20px;
+    width: 250px;
+
+}
+
+.input-block  ul  li  a{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 15%;
+    height: 55px;
+    line-height: 50px;
+    border-radius: 45px;
+    text-decoration: none;
+    background-color: #524B45;
+    transition: all .3s ease-in;
+}
+.input-block  ul  li  a:hover{
+    background-color: #937E6E;
+    transition: all .3s ease-in;
+}

@@ -1,0 +1,15 @@
+.information{
+    height: 300px;
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid #2D2C2C;
+    margin-top: 45px;
+}
+
+.information > .field{
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}

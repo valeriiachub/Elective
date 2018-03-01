@@ -1,0 +1,14 @@
+
+<link href="css/navStyle.css" rel="stylesheet" type="text/css">
+<header>
+    <span class="logo"><a href="teacherForm.jsp">Home</a></span>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/teacherCourses">Courses</a></li>
+        </ul>
+    </nav>
+    <div class="right-bar">
+        <span class="admin">Teacher</span>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+</header>
